@@ -1,0 +1,15 @@
+# Virtualenv / Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Runtime output
+logs/
+debug/
+.stop
+
+# macOS
+.DS_Store

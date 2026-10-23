@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-auto-click-retry"
+version = "1.0.0"
+description = "Find the Codex Retry button on screen and click it automatically (macOS)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23,<3",
+    "opencv-python>=4.7",
+    "Pillow>=9.0",
+    "pyobjc-framework-Quartz>=8.5",
+    "pyobjc-framework-Cocoa>=8.5",
+]
+
+[project.scripts]
+codex-retry = "retry_clicker.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["retry_clicker*"]
